@@ -1,0 +1,63 @@
+//<FORM>====================================================================================================
+.form {
+  position: relative;
+  &__btn {
+    @include button-reset;
+  }
+}
+.header-form {
+  width: 262px;
+  margin-bottom: 11px;
+  .form__btn {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 20px;
+    color: #ff9c00;
+  }
+  .input {
+    background-color: #f7f7f7;
+    height: 38px;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid transparent;
+    @include anim(0.3s, 0s);
+    &:hover {
+      border: 1px solid #fe9b00;
+      background-color: #fdf9e4;
+    }
+    &.focus {
+      border: 1px solid #fe9b00;
+      background-color: #fdf9e4;
+    }
+  }
+}
+//</FORM>====================================================================================================
+
+//<INPUT>====================================================================================================
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.input {
+  border-radius: 0 !important;
+  width: 100%;
+  display: block;
+  padding: 0px 20px;
+  &.focus {
+  }
+  &.err {
+    border: 1px solid red;
+  }
+}
+textarea.input {
+  resize: none;
+  padding: 0px 0px;
+}
+//</INPUT>====================================================================================================

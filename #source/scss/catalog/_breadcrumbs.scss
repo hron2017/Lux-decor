@@ -1,0 +1,38 @@
+.breadcrumbs {
+	margin: 33px 0;
+
+	&__item {
+		display: inline-block;
+		padding: 0 8px;
+		position: relative;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: -3px;
+			width: 1px;
+			height: 100%;
+			background-color: #a49f9f;
+			transform: rotate(20deg);
+		}
+		&:first-child {
+			margin-left: 10px;
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+			a {
+				color: #2d2828;
+			}
+		}
+	}
+
+	&__link {
+		color: #a49f9f;
+		font-family: "Source Sans Pro";
+		font-size: 16px;
+		font-weight: 400;
+	}
+}

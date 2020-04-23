@@ -1,0 +1,40 @@
+.know {
+	margin-bottom: 54px;
+}
+
+.know-contant {
+	display: flex;
+	padding-bottom: 38px;
+}
+.know-item {
+	flex: 0 1 50%;
+	padding: 0 15px;
+}
+.know-video__btn {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 74px;
+	height: 74px;
+	position: absolute;
+	bottom: 44px;
+	right: 207px;
+	color: #fff;
+	cursor: pointer;
+	@include anim(0.4s, 0s);
+	&:hover {
+		opacity: 1 !important;
+	}
+}
+.know-video__play {
+	background-image: url(../img/know/know-video__play.png);
+}
+.know-video__pause {
+	display: none;
+	border-radius: 50%;
+	background-color: #d42428;
+	font-size: 43px;
+	text-align: center;
+
+	line-height: 74px;
+}

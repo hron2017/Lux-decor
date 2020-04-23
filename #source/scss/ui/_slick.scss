@@ -1,0 +1,124 @@
+//====================================================================================================
+.slick-slider {
+	position: relative;
+	.slick-track,
+	.slick-list {
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	.slick-list {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+	}
+	.slick-track {
+		position: relative;
+		width: 100%;
+	}
+	.slick-slide {
+		overflow: hidden;
+		float: left;
+		position: relative;
+	}
+	.slick-dots {
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		li {
+			display: inline-block;
+			margin-right: 22px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+			button {
+				@include button-reset;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				font-size: 0;
+				background-color: #ffffff;
+				position: relative;
+			}
+			&.slick-active {
+				button {
+					&:after {
+						content: "";
+						position: absolute;
+						left: -11px;
+						top: -11px;
+						width: 32px;
+						height: 32px;
+						border-radius: 50%;
+						border: 1px solid #ffffff;
+					}
+				}
+			}
+		}
+	}
+}
+.know-slider.slick-slider {
+	.slick-dots {
+		bottom: 0;
+		left: 50%;
+		li {
+			button {
+				background-color: #c6c1c1;
+			}
+
+			&.slick-active {
+				button {
+					background-color: #fd9b00;
+					&:after {
+						border: 1px solid #fd9b00;
+					}
+				}
+			}
+		}
+	}
+}
+
+.slider-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 60px;
+	height: 60px;
+	background-color: #f7f7f7;
+	z-index: 3;
+	border-radius: 50%;
+	color: #fb9a00;
+	font-size: 16px;
+	&:before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-family: "FontAwesome";
+	}
+
+	&.slick-disabled {
+		&:before {
+			color: #000;
+			opacity: 0.4;
+		}
+	}
+	&__next {
+		right: -30px;
+		&:before {
+			content: "\f054";
+		}
+	}
+	&__prev {
+		left: -30px;
+		&:before {
+			content: "\f053";
+		}
+	}
+}
+
+//=====================================================================================================================

@@ -1,0 +1,28 @@
+$grey-dark: #1d1f20;
+$grey-middle: #343436;
+$white: #fff;
+$white-15: rgba($white, 0.15);
+
+.grid-container {
+	@media only screen and (max-width: 480px) {
+		column-count: 1;
+	}
+	@media only screen and (min-width: 481px) and (max-width: 620px) {
+		column-count: 2;
+	}
+	@media only screen and (min-width: 621px) and (max-width: 1023px) {
+		column-count: 3;
+	}
+	@media only screen and (min-width: 1024px) {
+		column-count: 4;
+	}
+	column-gap: 16px;
+	margin: 8px 16px;
+
+	.item {
+		background-color: $grey-middle;
+		margin: 8px 0;
+		padding: 21px;
+		display: inline-block;
+	}
+}

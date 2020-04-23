@@ -1,0 +1,141 @@
+//<ГОТОВЫЕ КЛАССЫ>====================================================================================================
+/*.ibg {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	img {
+		display: none;
+	}
+}*/
+
+//====================================================================================================
+//====================================================================================================
+.table {
+	display: table;
+	font-size: 0;
+	width: 100%;
+	//table-layout: fixed;
+}
+.trow {
+	display: table-row;
+}
+.cell {
+	display: table-cell;
+	&.full {
+		width: 100%;
+	}
+}
+//====================================================================================================
+.ibg {
+	position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+
+body.ie {
+	.ibg {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.ibg img {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+//====================================================================================================
+//====================================================================================================
+.video {
+	position: relative;
+	overflow: hidden;
+	height: 0;
+	padding-bottom: 55.25%;
+	video,
+	iframe,
+	object,
+	embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+.videobg {
+	video,
+	iframe,
+	object,
+	embed {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		transform: translateX(-50%) translateY(-50%);
+		background-size: cover;
+	}
+}
+//====================================================================================================
+.slick-slider {
+	position: relative;
+	.slick-track,
+	.slick-list {
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	.slick-list {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+	}
+	.slick-track {
+		position: relative;
+		width: 100%;
+	}
+	.slick-slide {
+		overflow: hidden;
+		float: left;
+		position: relative;
+	}
+	.slick-dots {
+		li {
+			button {
+			}
+			&.slick-active {
+				button {
+				}
+			}
+		}
+	}
+}
+//=====================================================================================================================
+.tab__item {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+//=====================================================================================================================
+.scroll {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1111;
+	background: #000;
+}

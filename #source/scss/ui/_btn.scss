@@ -1,0 +1,105 @@
+//<BUTTONS>====================================================================================================
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  @include anim(0.4s, 0s);
+  &:hover {
+  }
+  &.fw {
+    width: 100%;
+  }
+}
+
+.products__item {
+  &-btn {
+    height: 50px;
+    background-color: #fd9b00;
+    width: 100%;
+    line-height: 50px;
+    border: 1px solid transparent;
+    position: relative;
+    @include anim(0.4s, 0s);
+    margin-bottom: 14px;
+    &:hover {
+      border: 1px solid #ff9c00;
+      background-color: #fff;
+      color: #000;
+    }
+    &:after {
+      content: "\f291";
+      font-family: "FontAwesome";
+      position: absolute;
+      font-size: 22px;
+      top: 50%;
+      margin-top: -23px;
+      left: 57px;
+    }
+  }
+  &-click {
+    height: 50px;
+    background-color: #01b5ab;
+    line-height: 50px;
+    width: 196px;
+    border: 1px solid transparent;
+    @include anim(0.4s, 0s);
+    &:hover {
+      border: 1px solid #01b5ab;
+      background-color: #fff;
+      color: #000;
+    }
+  }
+  &-btn-comp {
+    width: 100%;
+    color: #00b5ab;
+    font-size: 14px;
+    text-transform: inherit;
+    position: relative;
+    &:hover {
+      color: #1f4946;
+      span {
+        background-color: #1f4946;
+      }
+    }
+    span {
+      @include anim(0.4s, 0s);
+      display: inline-block;
+      border-radius: 50%;
+      line-height: 32px;
+      color: #fff;
+      width: 32px;
+      height: 32px;
+      background-color: #00b5ab;
+      margin-right: 10px;
+    }
+  }
+}
+
+.sidebar-filter__btn {
+  color: #ff9c00;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-decoration: underline;
+}
+.info-delivery__btn {
+  color: #00b5ab;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+
+  span {
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 400;
+    margin-bottom: 0;
+    display: inline !important;
+  }
+}
+//</BUTTONS>====================================================================================================

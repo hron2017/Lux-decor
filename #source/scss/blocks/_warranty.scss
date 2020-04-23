@@ -1,0 +1,25 @@
+.warranty {
+	padding: 0 15px;
+
+	&-contant {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.warranty-item {
+	width: 263px;
+	box-shadow: 0 0 59px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+	padding: 27px 41px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	&__icon {
+		margin-bottom: 6px;
+		flex-grow: 1;
+	}
+	&__text {
+		font-size: 18px;
+		line-height: 22px;
+	}
+}

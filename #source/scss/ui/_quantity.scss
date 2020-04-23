@@ -1,0 +1,38 @@
+//<QUANTITY>====================================================================================================
+.quantity {
+  position: relative;
+  width: 73px;
+  height: 47px;
+  border: 1px solid #cfcfcf;
+  background-color: #ffffff;
+}
+.quantity__input {
+  height: 45px;
+  width: 50px;
+  text-align: center;
+  color: #101010;
+  font-weight: 300;
+}
+.quantity__btn {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  cursor: pointer;
+  &:before {
+    font-size: 25px;
+    display: inline-block;
+    line-height: 10px;
+    color: #a9a9a9;
+  }
+  &:hover {
+    &:before {
+      color: #da0005;
+    }
+  }
+  &.up {
+  }
+  &.dwn {
+    top: 25px;
+  }
+}
+//</QUANTITY>====================================================================================================

@@ -1,0 +1,124 @@
+//<SELECT>====================================================================================================
+.catalog-sort-line {
+	color: #7c7373;
+	font-family: Roboto;
+	font-weight: 500;
+	line-height: 35px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.select.active {
+	.select-title__arrow {
+		transform: rotate(180deg);
+	}
+}
+.select-block {
+	position: relative;
+	display: inline-block;
+	width: 240px;
+}
+.select__label {
+	z-index: 2;
+	position: absolute;
+	top: -8px;
+	background-color: #f7f7f7;
+	padding: 0 5px;
+	color: #979797;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 16px;
+	left: 20px;
+}
+.select {
+	position: relative;
+	cursor: pointer;
+	.select-title {
+		z-index: 1;
+		width: 100%;
+		position: relative;
+	}
+	.select-title__arrow {
+		position: absolute;
+		top: 0;
+		right: 0px;
+		width: 45px;
+		height: 100%;
+		@include anim(0.3s, 0s);
+		background: url("../img/icons/select-arrow.png") center no-repeat;
+	}
+	.select-title__value {
+		color: #292626;
+		font-size: 16px;
+		font-weight: 500;
+		overflow: hidden;
+		padding: 0 45px 0 25px;
+		white-space: nowrap;
+		text-transform: none;
+		text-overflow: ellipsis;
+	}
+	.select-options {
+		position: absolute;
+		z-index: 10;
+		top: 54px;
+		display: none;
+		overflow: hidden;
+		min-width: 100%;
+		background-color: #fff;
+		border: 1px solid #dedede;
+		padding: 10px 20px 10px 25px;
+	}
+	.select-options-scroll {
+		max-height: 80px;
+		overflow: auto;
+	}
+	.select-options-list {
+		padding: 0px 0px 0px 0px;
+	}
+	.select-options__value {
+		color: #292626;
+		font-family: Roboto;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		&:hover {
+			color: #fc9a00;
+		}
+	}
+}
+//</SELECT>====================================================================================================
+
+//<OPTIONS>====================================================================================================
+.option {
+	position: relative;
+	cursor: pointer;
+	padding-left: 25px;
+	line-height: 16px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	font-weight: 300;
+	&:last-child {
+		margin-bottom: 0px;
+	}
+	input {
+		display: none;
+	}
+	&:before {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 16px;
+		height: 16px;
+		content: "";
+		border: 1px solid #7f7f7f;
+		border-radius: 50%;
+	}
+	&.active {
+		&:before {
+			background: url("../img/icons/option.png") center no-repeat;
+		}
+	}
+}
+//</OPTIONS>====================================================================================================

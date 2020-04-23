@@ -1,0 +1,412 @@
+//====================================================================================================
+.header {
+	background-color: #fff;
+
+	&-inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&-content {
+		width: 100%;
+		margin-right: 25px;
+		padding-top: 16px;
+		&__top {
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 14px;
+
+			&-left {
+				display: flex;
+				flex-basis: 700px;
+				justify-content: space-between;
+			}
+		}
+		&__middle {
+			display: flex;
+			align-items: center;
+		}
+	}
+	&-cart {
+		flex-basis: 11%;
+		background-color: #1bcdc3;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		cursor: pointer;
+		@include anim(0.5s, 0s);
+		span {
+			opacity: 0.6;
+		}
+		&:hover {
+			background-color: #00b5ab;
+			span {
+				opacity: 1;
+			}
+		}
+
+		&__icon {
+			color: #ffffff;
+			font-size: 42px;
+			margin-bottom: 27px;
+		}
+		&__text {
+			color: #ffffff;
+			font-family: Roboto;
+			font-size: 16px;
+		}
+	}
+}
+//=======================   Header_TOP    =======================//
+
+.phone {
+	position: relative;
+	padding-left: 33px;
+	a {
+		color: #010101;
+		font-family: Roboto;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 22px;
+		display: block;
+		span {
+			font-weight: 700;
+		}
+	}
+	&:before {
+		content: "\f879";
+		position: absolute;
+		top: 6px;
+		left: 0;
+		font-family: "FontAwesome";
+		font-size: 23px;
+		color: #fd9b00;
+	}
+}
+
+.header__callback {
+	display: flex;
+	flex-direction: column;
+	.callback__btn {
+		background-color: #161615;
+		padding: 12px 30px;
+		text-transform: capitalize;
+
+		&:hover {
+			color: #fd9b00;
+		}
+	}
+}
+.callback__mail {
+	color: #000000;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 22px;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 5px;
+	&:before {
+		content: "\f0e0";
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 23px;
+		color: #fd9b00;
+		font-family: "FontAwesome";
+	}
+}
+
+.users {
+	text-align: right;
+	&-social__list {
+		margin-bottom: 23px;
+	}
+	&-social__item {
+		display: inline-block;
+		margin-right: 14px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&-social__link {
+		font-size: 14px;
+		display: inline-block;
+		width: 28px;
+		height: 28px;
+		border-radius: 12px;
+		text-align: center;
+		@include anim(0.3s, 0s);
+		color: #fff;
+
+		&:hover {
+			opacity: 0.5;
+		}
+		i {
+			line-height: 28px;
+		}
+		&.youtube {
+			background: #e14e42;
+		}
+		&.facebook {
+			background: #3a559f;
+		}
+		&.viber {
+			background: #7b519d;
+		}
+		&.vk {
+			background: #5281b7;
+		}
+		&.google {
+			background: #dc4e41;
+		}
+		&.skype {
+			background: #49aeea;
+		}
+		&.twitter {
+			background: #48abe7;
+		}
+		&.whatsapp {
+			background: #2ab200;
+		}
+		&.telegram {
+			background: #33abdf;
+		}
+	}
+
+	&-bar {
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			background-image: url(../img/login-icon.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 23px;
+			height: 22px;
+			left: -35px;
+			top: -3px;
+		}
+		a {
+			color: #000000;
+			font-family: Roboto;
+			font-size: 15px;
+			font-weight: 700;
+		}
+	}
+}
+//=======================   /Header_TOP    =======================//
+
+//=======================   Menu and SubMenu    =======================//
+.nav {
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+	&__item {
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 1px;
+			height: 100%;
+			background: #e3e3e3;
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	&__link {
+		display: block;
+		padding: 0 19px 0 20px;
+		color: #000000;
+		font-family: Roboto;
+		font-size: 15px;
+		font-weight: 400;
+		text-transform: uppercase;
+		@include anim(0.3s, 0s);
+		position: relative;
+
+		&:hover {
+			color: #00b5ab;
+		}
+	}
+	&__link-mod {
+		background-color: #e78216;
+		width: 278px;
+		color: #ffffff;
+		font-family: Roboto;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 53px;
+		text-transform: uppercase;
+		&:hover {
+			color: initial;
+		}
+		i {
+			position: absolute;
+			top: 18px;
+			right: 20px;
+		}
+	}
+}
+.nav__list li:hover > .sub-menu {
+	top: 3.335rem;
+	opacity: 1;
+	visibility: visible;
+}
+.sub-menu {
+	width: 17.375rem;
+	display: block;
+	position: absolute;
+	background-color: #ff9c00;
+	z-index: 100;
+	top: 16rem;
+	transition: all 650ms ease;
+	opacity: 0;
+	visibility: hidden;
+
+	li {
+		&:hover {
+			background-color: #fff;
+
+			@media (min-width: $md3+px) {
+				transform: scale(1.1);
+			}
+			a {
+				color: #000;
+			}
+			i {
+				opacity: 0.2;
+			}
+		}
+	}
+	&__link {
+		color: #ffffff;
+		font-family: Roboto;
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 53px;
+		padding-left: 13px;
+		display: block;
+
+		i {
+			position: absolute;
+			top: 19px;
+			right: 13px;
+		}
+	}
+	&__link-mod {
+		background-color: #fff;
+		color: #000 !important;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 40%;
+			margin-top: -8px;
+			width: 26px;
+			height: 15px;
+			background-image: url(../img/arrows-icon.png);
+			background-repeat: no-repeat;
+		}
+	}
+	.sub-menu {
+		background-color: #e78216;
+		left: 160%;
+		top: 0;
+	}
+}
+.sub-menu li:hover > .sub-menu a {
+	color: #fff;
+}
+.sub-menu li:hover > .sub-menu li:hover a {
+	color: #000;
+}
+.sub-menu li:hover > .sub-menu {
+	top: 0;
+	left: 95.5%;
+	li {
+		transform: initial;
+		z-index: 1;
+	}
+}
+/*
+@media screen and(max-width: 850px) {
+	.nav__list {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		height: 100vh;
+		flex-direction: column;
+		background-color: #191919;
+		z-index: 1000;
+	}
+	.nav__list li {
+		line-height: 6rem;
+	}
+	.sub-menu {
+		position: initial;
+		border: 3px solid transparent;
+		border-left-color: #eb3007;
+		margin-left: 1rem;
+		max-height: 0;
+		&:before {
+			display: none;
+		}
+	}
+	.nav__list li:hover > .sub-menu {
+		opacity: 1;
+		visibility: visible;
+		max-height: initial;
+	}
+}*/
+
+//=======================  // Menu and SubMenu    =======================//
+
+/*
+font-family: "FontAwesome";
+
+
+
+\f1d8 <i class="far fa-paper-plane"></i>  - самолетик
+\f10d <i class="fas fa-quote-left"></i>  - кавычки
+\f00e <i class="fas fa-search-plus"></i>
+\f0c1 <i class="fas fa-link"></i>  --  линк
+\f061 <i class="fas fa-arrow-right"></i>
+\f060 <i class="fas fa-arrow-left"></i>
+\f107 <i class="fas fa-angle-down"></i>  -  angle-down
+\f106 <i class="fas fa-angle-up"></i>  -  angle-up
+\f3cd - телефон
+\f058 - check
+\f406 - account
+\f002, <i class="fas fa-search"></i> - поиск
+\f07a, <i class="fas fa-shopping-cart"></i>
+\f005, <i class="fas fa-star"></i> - звезда
+\f1b9, <i class="fas fa-car"></i>
+\f2f6, <i class="fas fa-sign-in-alt"></i> - лог ин
+\f0e0, <i class="fas fa-envelope"></i> - конверт
+\f879, <i class="fas fa-phone-alt"></i> - трубка телефона
+\f3c5, <i class="fas fa-map-marker-alt"></i> - локация
+\f017, <i class="far fa-clock"></i> - часы
+
+
+СОЦСЕТИ
+\f39e, <i class="fab fa-facebook-f"></i>
+\f099, <i class="fab fa-twitter"></i>
+\f0d5, <i class="fab fa-google-plus-g"></i>
+\f231, <i class="fab fa-pinterest-p"></i>
+\f16d, <i class="fab fa-instagram"></i>
+
+*/
+/*
+
+*/

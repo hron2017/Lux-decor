@@ -1,0 +1,61 @@
+<!--
+
+	
+	
+	
+	
+	
+	
+	<svg xmlns="http://www.w3.org/2000/svg" width="251" height="113" viewBox="0 0 251 113">
+					<defs>
+						<clipPath id="xfova">
+							<path fill="#fff" d="M251.005.73v47.542l-64.736 64.727H64.73L-.006 48.272V.73" />
+						</clipPath>
+					</defs>
+					<g>
+						<g opacity="1">
+							<path fill="#131313" d="M251.005.73v47.542l-64.736 64.727H64.73L-.006 48.272V.73" />
+							<path fill="none" stroke="#ff0036" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
+								stroke-width="4" d="M251.005.73v47.542l-64.736 64.727v0H64.73v0L-.006 48.272v0V.73v0"
+								clip-path="url(&quot;#xfova&quot;)" />
+						</g>
+					</g>
+					<text x="0" y="15">This is Scalable Vector Graphic (SVG) Text</text>
+				</svg>
+		
+		
+		
+		
+				<img src="http://karenmenezes.com/shapes-polygon/clip-demo.jpg" alt="demo-clip-path" width="140" height="140"
+					class="clip-polygon">
+		
+				<img src="img/Layer_20.jpg" alt="" class="clip-polygon" />
+		
+		
+		
+				<svg class="clip-svg">
+					<defs>
+						<clipPath id="clip-svg-demo" clipPathUnits="objectBoundingBox">
+							<polygon points="0.25 0, 0.75 0, 1 0.5, 0.75 1, 0.25 1, 0 0.5" />
+						</clipPath>
+					</defs>
+				</svg>-->
+
+
+
+
+<!--
+	
+
+
+	  <img src="http://karenmenezes.com/shapes-polygon/clip-demo.jpg" alt="demo-clip-path" width="140" height="140" class="clip-polygon">
+</div> 
+
+		<svg class="clip-svg">
+			  <defs>
+				    <clipPath id="clip-svg-demo" clipPathUnits="objectBoundingBox">
+					      <polygon points="0.25 0, 0.75 0, 1 0.5, 0.75 1, 0.25 1, 0 0.5" />
+				    </clipPath>
+			  </defs>	
+		</svg>
+-->

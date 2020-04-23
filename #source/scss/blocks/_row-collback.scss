@@ -1,0 +1,45 @@
+.callback {
+	background-color: #00b5ab;
+	padding: 21px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 47px;
+	margin-bottom: 45px;
+	&__text {
+		margin-right: 65px;
+		color: #fefefe;
+		font-family: Roboto;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 22px;
+		text-transform: uppercase;
+	}
+	&-form {
+		width: 100%;
+		max-width: 458px;
+		height: 38px;
+
+		position: relative;
+		opacity: 0.5;
+		@include anim(0.3s, 0s);
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+		input {
+			background-color: #66d3cd;
+			color: #ffffff;
+			line-height: 36px;
+			font-size: 14px;
+			border: 1px solid #ffffff;
+		}
+	}
+	&-form__btn {
+		position: absolute;
+		top: 6px;
+		right: 10px;
+		font-size: 24px;
+		background: transparent;
+	}
+}
