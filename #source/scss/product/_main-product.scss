@@ -1,3 +1,11 @@
+.main-product {
+	.section__title {
+		margin-bottom: 32px;
+	}
+	.section-products {
+		margin-bottom: 64px;
+	}
+}
 .product-info {
 	margin-bottom: 29px;
 	display: flex;
@@ -268,16 +276,17 @@
 		}
 	}
 }
-.product-info__tabs {
+.block__tabs {
 	padding-bottom: 32px;
 	background-color: #fff;
+	margin-bottom: 39px;
 }
-.product-info__nav {
+.block__nav {
 	border-bottom: 1px solid #e5e5e5;
 	margin-bottom: 33px;
 	padding: 29px 0px 20px 26px;
 }
-.product-info__navitem {
+.block__navitem {
 	color: #292626;
 	font-size: 16px;
 	font-weight: 500;
@@ -300,7 +309,7 @@
 	}
 }
 
-.product-info__item {
+.block__item {
 	padding-left: 16px;
 }
 .product-info__item-list {

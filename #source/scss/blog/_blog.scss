@@ -1,0 +1,29 @@
+.acticles {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.acticle {
+	padding-bottom: 30px;
+	background-color: #ffffff;
+	border: 2px solid #fff;
+	flex: 0 1 30%;
+	margin-bottom: 30px;
+	&:nth-child(2n + 3) {
+	}
+	&__image {
+		padding-bottom: 72%;
+		margin-bottom: 21px;
+	}
+	&__name {
+		color: #292626;
+		font-size: 18px;
+		padding-left: 13px;
+		padding-right: 9px;
+	}
+
+	&:hover {
+		border: 2px solid #fc9a00;
+	}
+}

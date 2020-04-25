@@ -1,33 +1,87 @@
-<div class="popup">
+<div id="login" class="popup popup-login">
 	<div class="popup-table table">
 		<div class="cell">
 			<div class="popup-content">
 				<div class="popup-close"></div>
-				<div class="popup__title"></div>
-				<div class="popup__txt"></div>
-				<form action="#" class="popup-form form">
+				<div class="popup__title">Вход</div>
+				<form class="popup-form form">
 					<div class="form-input">
-						<input autocomplete="off" type="text" name="form[]" data-value="" class="input" />
+						<i class="fas fa-envelope"></i>
+						<input autocomplete="off" type="text" name="form[]" data-value="Почта" class="input req" />
 					</div>
 					<div class="form-input">
-						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req email" />
+						<i class="fas fa-unlock-alt"></i>
+						<input autocomplete="off" type="text" name="form[]" data-value="Пароль" class="input req" />
 					</div>
-					<div class="form-input">
-						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req" />
-					</div>
+					<a class="form__btn btn">Забыли пароль?</a>
 					<div class="form-button">
-						<button type="submit" class="form__btn btn fw"></button>
+						<button type="submit" class="form__btn">ВХОД</button>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="popup popup-video">
+<div id="register" class="popup popup-register">
 	<div class="popup-table table">
 		<div class="cell">
-			<div class="popup-close"></div>
-			<div class="popup-video__value"></div>
+			<div class="popup-content">
+				<div class="popup-close"></div>
+				<div class="popup__title">Регистрация</div>
+				<form class="popup-form form">
+					<div class="form-input">
+						<i class="fas fa-user"></i>
+						<input autocomplete="off" type="text" name="form[]" data-value="Имя" class="input req" />
+					</div>
+					<div class="form-input">
+						<i class="fas fa-user"></i>
+						<input autocomplete="off" type="text" name="form[]" data-value="Фамилия" class="input req" />
+					</div>
+					<div class="form-input">
+						<i class="fas fa-phone-alt"></i>
+						<input autocomplete="off" type="tel" name="form[]" data-value="Телефон" class="input req phone" />
+					</div>
+					<div class="form-input">
+						<i class="fas fa-envelope"></i>
+						<input autocomplete="off" type="email" name="form[]" data-value="Email" class="input req" />
+					</div>
+
+					<div class="form-input">
+						<i class="fas fa-unlock-alt"></i>
+						<input autocomplete="off" type="text" name="form[]" data-value="Пароль" class="input req" />
+					</div>
+
+					<div class="form-input">
+						<i class="fas fa-unlock-alt"></i>
+						<input autocomplete="off" type="text" name="form[]" data-value="Повторите пароль" class="input req" />
+					</div>
+
+					<div class="form-button">
+						<button type="submit" class="form__btn form__btn-mod">РЕГИСТРАЦИЯ</button>
+					</div>
+				</form>
+				<p class="form-text">или <a class="form__btn btn log-in">войдите</a>, если у вас уже есть аккаунт</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup popup-callback">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-content">
+				<div class="popup-close"></div>
+				<div class="popup__title">Укажите номер телефона</div>
+				<p class="form-text">и мы Вам перезвоним</p>
+				<form class="popup-form form">
+					<div class="form-input">
+						<i class="fas fa-phone-alt"></i>
+						<input autocomplete="off" type="tel" name="form[]" data-value="Телефон" class="input req phone" />
+					</div>
+					<div class="form-button">
+						<button type="submit" class="form__btn fw">Отправить</button>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>

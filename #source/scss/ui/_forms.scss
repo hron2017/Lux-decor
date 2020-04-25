@@ -34,6 +34,105 @@
     }
   }
 }
+
+.main-order {
+  .form {
+    max-height: 475px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    p {
+      color: #7c7373;
+      font-family: Roboto;
+      line-height: 20px;
+      margin-bottom: 19px;
+    }
+  }
+  .catalog-sort-line {
+    margin-bottom: 0;
+  }
+  .select-block {
+    border: 1px solid #d1d1d1;
+    width: 552px;
+    line-height: 43px;
+    background-color: #fff;
+  }
+  .select .select-title__value {
+    color: #292626;
+  }
+}
+.form-input {
+  position: relative;
+  margin-bottom: 17px;
+  padding-left: 115px;
+  max-width: 552px;
+  label {
+    color: #292626;
+    font-family: Roboto;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &:after {
+      content: "*";
+      position: absolute;
+      top: 0;
+      right: -10px;
+      color: #fe9b00;
+    }
+  }
+  .input {
+    height: 45px;
+    border: 1px solid #d1d1d1;
+    color: #7c7373;
+    font-family: Roboto;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  textarea {
+    border: 1px solid #d1d1d1;
+    padding: 15px;
+  }
+  .btn {
+    color: #00b5ab;
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    text-transform: capitalize;
+  }
+}
+.form-button {
+  padding-left: 115px;
+  .form__btn {
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 293px;
+    height: 50px;
+    background-color: #fd9b00;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      background-image: url(../img/login-icon-white.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 23px;
+      height: 22px;
+      left: 90px;
+      top: 15px;
+    }
+  }
+  .form__btn-mod {
+    &:after {
+      background-image: url(../img/login-icon-checed.png);
+      left: 44px;
+    }
+  }
+}
 //</FORM>====================================================================================================
 
 //<INPUT>====================================================================================================

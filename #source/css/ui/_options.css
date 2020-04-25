@@ -1,0 +1,34 @@
+.option {
+  position: relative;
+  cursor: pointer;
+  padding-left: 25px;
+  line-height: 16px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 300; }
+  .option:last-child {
+    margin-bottom: 0px; }
+  .option input {
+    display: none; }
+  .option:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    content: "";
+    border: 1px solid #7f7f7f;
+    background-color: #dfdfdf;
+    border-radius: 50%; }
+  .option.active:before {
+    border: 1px solid #fd9b00;
+    background-color: #ffffff; }
+  .option.active:after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fd9b00; }

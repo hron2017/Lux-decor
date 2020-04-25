@@ -48,7 +48,7 @@ body {
 .main {
   padding-top: 21px;
 }
-.page {
+.pageee {
   max-width: $mw + px;
   padding-left: 15px;
   padding-right: 15px;
@@ -64,16 +64,19 @@ body {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  @media (max-width: $md1+px) {
+  @media (max-width: $md2+px) {
     max-width: 970px;
   }
-  @media (max-width: $md2+px) {
+  @media (max-width: $md3+px) {
     max-width: 750px;
   }
-  @media (max-width: $md3+px) {
+  @media (max-width: $md4+px) {
     max-width: none;
     padding: 0 10px;
   }
+}
+.container-sm {
+  max-width: 947px;
 }
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
@@ -91,6 +94,7 @@ body {
 @import "ui/_pagging";
 @import "ui/_check";
 @import "ui/_range";
+@import "ui/_options";
 
 @import "blocks/_header";
 @import "blocks/_main-slider";
@@ -105,6 +109,18 @@ body {
 @import "catalog/_breadcrumbs";
 
 @import "product/_main-product";
+
+@import "blog/_blog";
+
+@import "contact/_contact";
+
+@import "article/_one-article";
+
+@import "delivery/_delivery";
+
+@import "comparison/_comparison";
+
+@import "order-cart/_order-cart";
 
 @import "blocks/_footer";
 @import "blocks/_popup";

@@ -89,36 +89,3 @@
 	}
 }
 //</SELECT>====================================================================================================
-
-//<OPTIONS>====================================================================================================
-.option {
-	position: relative;
-	cursor: pointer;
-	padding-left: 25px;
-	line-height: 16px;
-	margin-bottom: 10px;
-	font-size: 15px;
-	font-weight: 300;
-	&:last-child {
-		margin-bottom: 0px;
-	}
-	input {
-		display: none;
-	}
-	&:before {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 16px;
-		height: 16px;
-		content: "";
-		border: 1px solid #7f7f7f;
-		border-radius: 50%;
-	}
-	&.active {
-		&:before {
-			background: url("../img/icons/option.png") center no-repeat;
-		}
-	}
-}
-//</OPTIONS>====================================================================================================

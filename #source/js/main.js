@@ -8,6 +8,9 @@
 //@prepros-append blocks/range.js
 //@prepros-append blocks/check.js
 //@prepros-append blocks/tabs.js
+//@prepros-append blocks/option.js
+
+//@prepros-append blocks/map.js
 //@prepros-append script.js
 
 //@prepros-append jq-end.js

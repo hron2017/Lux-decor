@@ -77,6 +77,14 @@ $('.section-text__scroll').niceScroll({
 	touchbehavior: true,
 	background: "#dedede"
 });
+
+$('.main-comparison__contant').niceScroll({
+	cursoropacitymin: 1,
+	cursorcolor: "#dbdbdb",
+	background: "#f7f7f7",
+	railoffset: "-7px"
+});
+
 //====================  <!-- niceScroll -->  ========================//
 
 //====================  <!-- Pagging -->  ========================//
@@ -119,11 +127,8 @@ $('.pagging__arrow-prev').click(function (e) {
 });
 //====================  <!-- Pagging -->  ========================//
 $('[data-fancybox="gallery"]').fancybox({});
-//====================    ========================//
 
 
-
-//====================  <!-- Pagging -->  ========================//
 $('.main-slider').slick({
 	nextArrow: '<button type="button" class="slider-btn__next slider-btn"></button>',
 	prevArrow: '<button type="button" class="slider-btn__prev slider-btn"></button>',
@@ -145,3 +150,48 @@ $('.know-slider').slick({
 	dots: true,
 	arrows: false
 });
+
+
+
+//====================  Hover ========================//
+$('.popup-hover').mouseenter(function () {
+	$('.delivery-popup').css({ "opacity": "1", "z-index": "3" });
+});
+$('.popup-hover').mouseleave(function () {
+	$('.delivery-popup').css({ "opacity": "0", "z-index": "-1" });
+})
+
+
+$('.sidebar-filter__item-info').click(function () {
+	$('.sidebar-filter__item-info').parent().find('.sidebar-filter__item-info').removeClass('active');
+	$(this).addClass('active');
+})
+//====================  /Hover ========================//
+
+//====================  logIn ========================//
+$('.log-in').click(function () {
+	$(this)
+		.closest('.popup')
+		.removeClass('active')
+		.fadeOut()
+		.closest('body')
+		.find('#login')
+		.addClass('active')
+		.fadeIn();
+});
+//====================  /logIn ========================//
+
+$('.products-counts__prev').click(function () {
+	inc(this.parentNode, -1);
+});
+$('.products-counts__next').click(function () {
+	inc(this.parentNode, 1);
+});
+function inc(Obj, Val) {
+	Obj = $(Obj).find('.products-counts__count');
+	var val = parseInt(Obj.text());
+	if (val == 0 && Val == -1) {
+		return;
+	};
+	Obj.text(val + Val);
+};

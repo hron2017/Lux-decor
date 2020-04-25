@@ -1,6 +1,6 @@
 .main-catalog {
 	display: flex;
-
+	margin: 0 auto;
 	&__sidebar {
 		flex: 0 1 21%;
 		margin-right: 50px;
@@ -16,9 +16,10 @@
 	}
 	.products__item-image {
 		width: 70%;
+		padding-bottom: 69%;
 	}
 }
-.sidebar__title {
+.page__title {
 	color: #292626;
 	font-size: 28px;
 	font-weight: 500;
