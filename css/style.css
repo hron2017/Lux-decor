@@ -1960,47 +1960,52 @@ font-family: "FontAwesome";
   align-items: center; }
 
 .products-counts {
-  margin-right: 25px;
-  width: 84px;
-  position: relative;
-  padding: 0 27px; }
-  .products-counts span {
-    display: inline-block; }
-  .products-counts__count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .products-counts__icon {
     width: 40px;
     height: 40px;
-    background-color: #f7f7f7;
-    color: #7c7373;
     line-height: 40px;
-    text-align: center; }
-  .products-counts__btn {
+    text-align: center;
+    position: relative;
+    cursor: pointer; }
+  .products-counts__count {
+    color: #7c7373;
+    background-color: #f7f7f7; }
+  .products-counts__prev:after {
+    content: '';
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    cursor: pointer;
-    background-color: #fd9b00; }
-    .products-counts__btn:hover {
-      background-color: #000; }
-  .products-counts__next {
-    right: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 2px;
+    background: #fd9b00; }
+  .products-counts__next:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 2px;
+    background: #fd9b00; }
+  .products-counts__next:before {
+    content: '';
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 14px;
     width: 2px;
-    height: 15px; }
-    .products-counts__next:after {
-      content: "";
-      position: absolute;
-      top: 7px;
-      left: -7px;
-      width: 15px;
-      height: 2px;
-      background-color: #fd9b00; }
-    .products-counts__next:hover:after {
-      background-color: #000; }
-  .products-counts__prev {
-    left: 0;
-    width: 15px;
-    height: 2px; }
+    background: #fd9b00; }
 
 .product-video__btn {
   padding: 0;

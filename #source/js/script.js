@@ -181,17 +181,44 @@ $('.log-in').click(function () {
 });
 //====================  /logIn ========================//
 
+
+//====================  Product-count ========================//
 $('.products-counts__prev').click(function () {
 	inc(this.parentNode, -1);
+	orderCount($(this));
 });
 $('.products-counts__next').click(function () {
 	inc(this.parentNode, 1);
+	orderCount($(this));
+
+
 });
 function inc(Obj, Val) {
-	Obj = $(Obj).find('.products-counts__count');
+	Obj = $(Obj).closest('.products-counts').find('.products-counts__count');
 	var val = parseInt(Obj.text());
 	if (val == 0 && Val == -1) {
 		return;
 	};
 	Obj.text(val + Val);
 };
+function orderCount(thin) {
+	let orderCount = thin.closest('.order-count').find('.products-counts__count').html();
+	let orderPrice = thin.closest('.order-count').find('.products__item-price-new').html();
+	orderTotal = parseFloat((orderCount) * parseFloat(orderPrice)).toFixed(2);
+	thin.closest('.order-count').find('.products-counts__total').html(orderTotal + ' грн.');
+
+	$('.total-all').html(orderPriceTotal().toFixed(2) + ' грн.');
+}
+function orderPriceTotal() {
+	let orderTotal = $('.products-counts__total');
+	let result = 0;
+	for (let i = 0; i <= orderTotal.length - 1; i++) {
+		result += parseFloat($(orderTotal[i]).text());
+	}
+	return result;
+}
+//====================  /Product-count ========================//
+
+$('.item-delete').click(function () {
+	$(this).closest('.order-item').remove();
+});
